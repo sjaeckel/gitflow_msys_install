@@ -1,4 +1,6 @@
-gitflow_msys_install
-====================
+Installation script for git-flow on msys(git)
+=============================================
 
-Install script for gitflow on msys
+Easy installation
+-----------------
+curl https://raw.github.com/sjaeckel/gitflow_msys_install/master/install.sh | sh

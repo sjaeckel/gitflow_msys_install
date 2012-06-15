@@ -7,7 +7,9 @@ curl https://raw.github.com/stzedn/gitflow_msys_install/master/getopt.exe > ~/bi
 curl https://raw.github.com/stzedn/gitflow_msys_install/master/libiconv2.dll > ~/bin/libiconv2.dll
 curl https://raw.github.com/stzedn/gitflow_msys_install/master/libintl3.dll > ~/bin/libintl3.dll
 curl https://raw.github.com/bobthecow/git-flow-completion/master/git-flow-completion.bash > ~/git-flow-completion.bash
-echo "source ~/git-flow-completion.bash" >> ~/.bashrc
+# add sourcing of git-flow-completion to bashrc
+[[ ! -z $(cat ~/.bashrc | grep "source ~/git-flow-completion.bash") ]] ||
+  echo "source ~/git-flow-completion.bash" >> ~/.bashrc
 
 TEMPDIR="/tmp/$(basename $0).$$"
 mkdir $TEMPDIR

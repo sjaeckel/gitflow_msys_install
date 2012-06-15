@@ -1,8 +1,8 @@
 #! /bin/sh
 
-curl https://raw.github.com/sjaeckel/gitflow_msys_install/master/getopt.exe > ~/bin/getopt.exe
-curl https://raw.github.com/sjaeckel/gitflow_msys_install/master/libiconv2.dll > ~/bin/libiconv2.dll
-curl https://raw.github.com/sjaeckel/gitflow_msys_install/master/libintl3.dll > ~/bin/libintl3.dll
+curl https://raw.github.com/stzedn/gitflow_msys_install/master/getopt.exe > ~/bin/getopt.exe
+curl https://raw.github.com/stzedn/gitflow_msys_install/master/libiconv2.dll > ~/bin/libiconv2.dll
+curl https://raw.github.com/stzedn/gitflow_msys_install/master/libintl3.dll > ~/bin/libintl3.dll
 curl https://raw.github.com/bobthecow/git-flow-completion/master/git-flow-completion.bash > ~/git-flow-completion.bash
 echo "source ~/git-flow-completion.bash" >> ~/.bashrc
 

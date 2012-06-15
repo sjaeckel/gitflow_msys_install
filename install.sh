@@ -1,5 +1,8 @@
 #! /bin/sh
 
+# create ~/bin folder if not existant
+[ -d ~/bin ] || { mkdir ~/bin || exit 1; }
+
 curl https://raw.github.com/stzedn/gitflow_msys_install/master/getopt.exe > ~/bin/getopt.exe
 curl https://raw.github.com/stzedn/gitflow_msys_install/master/libiconv2.dll > ~/bin/libiconv2.dll
 curl https://raw.github.com/stzedn/gitflow_msys_install/master/libintl3.dll > ~/bin/libintl3.dll

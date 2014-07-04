@@ -11,7 +11,7 @@
 [ -f ~/bin/libintl3.dll ] ||
   curl https://raw.github.com/stzedn/gitflow_msys_install/master/libintl3.dll > ~/bin/libintl3.dll
 [ -f ~/git-flow-completion.bash ] ||
-  curl https://raw.github.com/bobthecow/git-flow-completion/master/git-flow-completion.bash > ~/git-flow-completion.bash
+  curl https://raw.githubusercontent.com/bobthecow/git-flow-completion/master/git-flow-completion.bash > ~/git-flow-completion.bash
 # add sourcing of git-flow-completion to bashrc
 [[ ! -z $(cat ~/.bashrc | grep "source ~/git-flow-completion.bash") ]] ||
   echo "source ~/git-flow-completion.bash" >> ~/.bashrc
